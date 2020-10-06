@@ -1,7 +1,7 @@
-# WMT14 English to German
+# WMT14 English to German Neural Machine Translation
 A Pytorch implementation of NMT using attention-based RNN.
 
-Follwing [[1]](#References), the sentences are encoded by **BPE (Byte Pair Encoder)** with a shared source-target vocabulary.
+Following [[1]](#References), the sentences are encoded by **BPE (Byte Pair Encoder)** with a shared source-target vocabulary.
 
 ## Quick Start
 ### Install requirements
@@ -18,7 +18,7 @@ python prepare_data.py -h
 python train.py -h
 ```
 ### Evaluate
-The default recipe can achieve ~20 BLEU on the test set after 15 epochs:
+The default recipe can achieve **~20 BLEU** on the test set after 15 epochs:
 ```
 $ python eval.py exp/default/best.pth --dir ${WMT14} --beams 10 --split dev
 Loading DEV dataset ...
