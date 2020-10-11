@@ -11,11 +11,11 @@ $ pip install -r requirements.txt
 ### Prepare data
 Download WMT14 dataset and build the BPE model:
 ```
-python prepare_data.py -h
+$ python prepare_data.py -h
 ```
 ### Train
 ```
-python train.py -h
+$ python train.py -h
 ```
 ### Evaluate
 The default recipe can achieve **~20 BLEU** on the test set after 15 epochs:
